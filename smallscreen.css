@@ -1,0 +1,282 @@
+/*Tabletop Utility and its code are Copyright 2014 Matthew Langhinrichs.
+Contact webhost@tabletoputility.com for more information.*/
+html {
+	width: device-width;
+}
+body {
+	margin: 0;
+    background-color: #555522;
+	font-family: 'Adobe Garamond Pro Bold', serif;
+	height: initial;
+	width: device-width;
+	word-wrap: break-word;
+	-webkit-text-size-adjust: none;
+}
+p {
+	font-family: 'Adobe Garamond Pro', serif;
+	font-size: 1em;
+}
+	p a {
+		text-decoration: underline;
+	}
+
+	#middleimg {
+		border: 0.25em solid black;
+		border-radius: 0.3em;
+	}
+
+a {
+	text-decoration: none;
+	color: initial;
+}
+h1 {
+	text-align: center;
+	font-size: initial;
+}
+	h1 span {
+		font-size: 2em;
+		font-variant: small-caps;
+	}
+	h1 br {
+		display: initial;
+	}
+table {
+	margin: 0 auto;
+	width: 100%;
+}
+footer {
+	text-align: center;
+	padding-bottom: .3em;
+}
+	footer a:hover {
+		color: #7A0000;
+	}
+input {
+	background-color: #79593a;
+	border: 0.1em solid black;
+	text-align: center;
+	font-weight: bold;
+	font-size: .8em;
+}
+/*Strip <br>s from mobile*/
+br {
+	display: none;
+}
+	#inner input {
+		background-color: white;
+		text-align: left;
+		font-size: initial;
+	}
+/*.skinny {
+	border: 0.15em solid black;
+	border-radius: 0.3em;
+	padding: 0em 0.4em;
+}
+.wide {
+	border: 0.15em solid black;
+	border-radius: 0.3em;
+	width: 100%;
+	height: inherit;
+	text-align: left;
+}
+	.wide img {
+		height: 2.5em;
+		padding-top: .5em;
+		display: inline-block;
+		float: left;
+	}*/
+.button  {
+	width: 4em;
+	height: 1.5em;
+	background-color: #cccccc;
+	border: 0.13em solid black;
+	border-radius: 0.3em;
+	margin: auto;
+	padding-top: 0.30em;
+	font-variant: small-caps;
+	font-size: 1.5em;
+}
+	.button:hover {
+		background-color: #ccbbaa;
+	}
+.centerimage {
+	text-align: center;
+	margin: 0em;
+	padding: 0em;
+}
+/*.center {
+	margin:0 auto;
+	width: 7.5em;
+	height: 2.1em;
+	margin-top: -1.25em;
+}
+	.center img {
+		float: left;
+		padding: 0.9em 0.28em 0px 0.28em;
+	}
+	.center div {
+		padding-top: 0.28em;
+		float: left;
+		width: 2em;
+		height: 1.7em;
+		font-size: 1.5em;
+	}*/
+.clear {
+	clear: both;
+}
+#middleimg {
+	width: 95%;
+}
+#header {
+	text-align: left;
+	background-color: #554433;
+	padding-top: 0.1em;
+	padding-left: 0.1em;
+	height: 2.8em;
+    margin: 0em;
+	overflow: initial;
+	border: 0em;
+	border-bottom: 0.25em solid black;
+	width: 100%;
+	z-index: 1;
+	position: fixed;
+	
+}
+	#header img {
+		height: 2.5em;
+		padding-top: .2em;
+		display: inline-block;
+		float: left;
+	}
+	.diceres {
+		float: left;
+		font-size: 2.7em;
+		height: initial;
+		padding: initial;
+		font-weight: bold;
+		margin-top: 0.3em;
+	}
+	#header .nav{
+		display:none;
+		float:right;
+		height:2em;
+		font-size: 1.5em;
+		text-align:center;
+		padding: 0.5em;
+		
+	}
+	#header .nav:hover {
+		padding-top: 0.4em;
+	}
+
+#center {
+	padding: .5em;
+	padding-top: 0em;
+	margin:0 auto;
+	margin-bottom: 1em;
+	width: initial;
+	background-color: #aaaa99;
+}
+	#inner {
+		text-align: center;
+		margin-top: 0;
+		padding: 0.5em;
+		background-color: #aaaa99;
+		border: 0.5em solid #555522;
+		border-top: none;
+	}
+
+.linkblock {
+	font-size: 1.2em;
+	text-align: center;
+	width: 100%;
+	padding: 0em;
+	margin: 0em;
+}
+	.linkblock a:hover {
+		color: #7A0000;
+	}
+	.linkblock img {
+		float: left;
+		margin: 0em;
+		border: 0.25em solid black;
+		border-radius: 0.28em;
+		padding: 0;
+		margin-bottom: 0.5em;
+		width: 97%;
+		height: initial;
+		display: inline;
+	}
+	.linkblock img:hover {
+		border: 0.25em solid #7A0000;
+	}
+
+.dice{
+	float: left;
+	font-size: 1.5em;
+	height: 6em;
+	padding: 0.5em;
+	padding-right: 0em;
+	clear: left;
+}
+#fightResult {
+	font-size: 1em;
+}
+	#fightResult>tr>td {
+		border: 0.1em solid black;
+		padding: none;
+		min-width: 3em;
+	}
+.diceHead {
+	width: 2.5em;
+	display: inline-block;
+	float: left;
+}
+
+#mobilebreak {
+	height: 3em;
+	width: 1em;
+	display: inline-block;
+}
+td img {
+	width: 3.1em;
+	height: 3.1em;
+}
+.vals {
+	padding: .2em;
+}
+.diceline {
+	text-align: center;
+	margin-bottom: 0.5em;
+	margin-top: none;
+	display: block;
+	height: 3.1em;
+}
+.fightoutputinput {
+	width: 1.3em;
+	padding: 0.1em;
+}
+#fightsort {
+	display: none;
+}
+	#fightsort:target {
+		display: initial;
+	}
+#playerhp {
+	width: 2em;
+}
+#playerinit {
+	width: 2em;
+	margin-right: 0.095em;
+}
+#playername {
+	width: 8em;
+}
+.inlinetable {
+	width: 100%;
+	overflow: hidden;
+}
+	.inlinetable td {
+		width: initial;
+		font-size: initial;
+	}

@@ -1,0 +1,56 @@
+<!--Tabletop Utility and its code are Copyright 2014 Matthew Langhinrichs.
+Contact webhost@tabletoputility.com for more information.-->
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel='stylesheet' href='style.css'/>
+	<link rel="stylesheet" type="text/css" href="smallscreen.css" media="only screen and (max-device-width: 480px), only screen and (min-device-width: 560px) and (max-device-width: 1136px) and (-webkit-min-device-pixel-ratio: 2)" />
+	<meta name="viewport" content="user-scalable=no, width=device-width" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<script src='script.js'></script>
+	<title>RPGTU | Region Utility</title>
+	<link rel="icon" href="favicon.ico" type="image/ico" />
+	<link rel="SHORTCUT ICON" href="favicon.ico" />
+</head>
+<body>
+    <div id="header">
+	</div>
+		<div id="center">
+			<div id="inner">
+				<div id="mobilebreak"></div>
+				<br><br><h1><span>Region Utility</span></h1>
+				<p>Enter your own statistics if you have them, or use one of the dropdown presets to find an equivalently-sized region. If you don't have a population in mind, mess around a bit and see what gives you the statistics you like. I hope that scale is self-explanatory. </p>
+				<h2>Scale & Tech Level:</h2> 
+				<form class="region">
+					<input type="radio" name="scale" value="settlement" onChange="altInput();" disabled /> <div class="disabled">Settlement</div>
+					<input type="radio" name="scale" value="city" onChange="altInput();" checked /> City
+					<input type="radio" name="scale" value="country" onChange="altInput();" /> Country
+					<input type="radio" name="scale" value="planet" onChange="altInput();" disabled /> <div class="disabled">Planet</div>
+					<input type="radio" name="scale" value="system" onChange="altInput();" disabled /> <div class="disabled">System</div>
+					<input type="radio" name="scale" value="sector" onChange="altInput();" disabled /> <div class="disabled">Sector</div>
+				</form>
+				<br>
+				<form class="region">
+					<input type="radio" name="tech" value="primitive" disabled /><div class="disabled">Primitive</div>
+					<input type="radio" name="tech" value="fantasy" checked /> Late Medieval / Fantasy
+					<input type="radio" name="tech" value="modern" disabled /><div class="disabled">Modern</div>
+					<input type="radio" name="tech" value="earlysf" disabled /><div class="disabled">Early SciFi</div>
+					<input type="radio" name="tech" value="latesf" disabled /><div class="disabled">Late SciFi</div>
+				</form>
+				<br><br>
+				<h2 class="altinput">Population: </h2><input type="number" id="size" /><br><br>
+				<div id="altinput"></div>
+				<button onClick="regionButton();">Generate Statistics</button>
+				<br>
+				<p id="regiontypeoutput"></p>
+				<div id="regiontableoutput"></div>
+			</div>
+		</div>
+		<div id="rightblank"></div>
+	</div>
+	<footer><h2><a href="copyright.html">Copyright Information</a></h2></footer>
+</body>
+<script>
+	repetitionFix.header();
+</script>
+</html>

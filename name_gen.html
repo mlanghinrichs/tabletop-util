@@ -1,0 +1,51 @@
+<!--Tabletop Utility and its code are Copyright 2014 Matthew Langhinrichs.
+Contact webhost@tabletoputility.com for more information.-->
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel='stylesheet' href='style.css'/>
+	<link rel="stylesheet" type="text/css" href="smallscreen.css" media="only screen and (max-device-width: 480px), only screen and (min-device-width: 560px) and (max-device-width: 1136px) and (-webkit-min-device-pixel-ratio: 2)" />
+	<meta name="viewport" content="user-scalable=no, width=device-width" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<script src='script.js'></script>
+	<title>RPGTU | Name Generator</title>
+	<link rel="icon" href="favicon.ico" type="image/ico" />
+	<link rel="SHORTCUT ICON" href="favicon.ico" />
+</head>
+<body>
+    <div id="header">
+	</div>
+		<div id="center">
+			<div id="inner">
+				<div id="mobilebreak"></div><br><br>
+				<h1><span>Name Generator</span></h1>
+					<h2>Instructions</h2>
+					<p>If you choose a preset, you don't need to do anything else - just hit 'generate names' and you'll get what you asked for.</p>
+					<p>To make your own names, add to the template by selecting word elements and hit 'generate' to see the results. Beginning consonant clusters are those like "sm" and "wh" that start words in English, but can never end them; mid/fin consonant clusters are the opposite, such as "rd" and "ld". Try different combinations to see what works.</p>
+					<p>Custom inputs take the format 'syllable1, syllable2, syllable3' (without the quotes), and it'll randomize between whatever you put in when you hit 'add.' Have fun!</p>
+				<h2>Presets: </h2>
+					<select onChange="presetSet();" id="presets">
+						<option value="def">-choose one-</option>
+						<option value="greek">Greek</option>
+						<option value="celtic">Celtic</option>
+						<option value="roman">Roman</option>
+						<option value="norse">Norse</option>
+					</select>
+				<br><br>
+				<h2>Input: </h2><button onClick="printAddLett(1);">Vowel</button><button onClick="printAddLett(2);">Vowel Cluster</button><button onClick="printAddLett(3);">Consonant</button><button onClick="printAddLett(4);">Consonant Cluster (beginning)</button><button onClick="printAddLett(5);">Consonant Cluster (Mid/Fin)</button><br>
+				<h2>Custom Input: </h2><input type="text" id="userSylInput" /><button onClick="printAddLett(6);">Add</button>
+				<p id="displayinput"></p>
+				<br>
+				<button onClick="printNamesSized(lettArray);">Generate Names</button> <button onClick="clearNames();">Clear Selection & Names</button>
+				<br><br>
+				<table id="nameresults"></table>
+			</div>
+		</div>
+		<div id="rightblank"></div>
+	</div>
+	<footer><h2><a href="copyright.html">Copyright Information</a></h2></footer>
+</body>
+<script>
+	repetitionFix.header();
+</script>
+</html>

@@ -1,0 +1,27 @@
+TO DO
+-----
+DONE - make it so monster stats are stored in 2d array when they're dumped, with one 2nd-dimension array for each monster containing their stats following format: [[Monstname, Monstnumoftotal, stat, stat, stat etc.],[ " ],[ " ]]
+DONE - then, make it so the print function just goes through that array and prints everyone
+DONE - make that fightArray orderable by monster number (by name alpha then nums within that) and by initiative
+DONE - make players addable - they'll each get their own array slot (and eventually their names will be stored at the beginning of the session in php so the DM can just hit add players and only have to enter their init!)
+DONE - then make it so adding monsters again just drops them into the same fightArray
+make inner overflow:hidden on mobile
+
+dungeon generator
+THEN make it so the encounter runner displays in a separate window
+THEN make it so it actually goes through the people in order.
+THEN make it so that it allows for delays/changed initiative/etc (just make each array editable! yesss!)
+THEN make it so players can add as many stats as they want beyond the standard, then so they can choose which are rollable or static or 	whatever
+
+---
+make a surface gravity calculator (remember, the mass of the surface objects will be so insignificant that you needn't factor them in)
+	parameters: mass, radius
+	-> density = (4/3)*(3.1415926)*(radius^3)
+	make mass and radius adjustable but affect density, like area and population are adjustable but affect pop density
+
+make a habitable-planet-geography-stats-generator that calculates %livable space, %water, %land, %unlivable land, etc.
+
+# of countries/civs generator
+	parameters: radius, % habitable, civilization level (e.g. a medieval planet will have hundreds, a intergalactic planet may have <2)
+--> given solar system, gen # of planets
+--> given sector size in lightyears, gen # of solar systems

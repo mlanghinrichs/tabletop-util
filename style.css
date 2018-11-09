@@ -1,0 +1,312 @@
+/*Tabletop Utility and its code are Copyright 2014 Matthew Langhinrichs.
+Contact webhost@tabletoputility.com for more information.*/
+html {
+	height: 100%
+}
+body {
+	margin: 0;
+    background-color: #555522;
+	font-family: 'Adobe Garamond Pro Bold', serif;
+	height: 100%;
+	width: 100%;
+}
+p {
+	font-family: 'Adobe Garamond Pro', serif;
+	font-size: 1.1em;
+}
+	p a {
+		text-decoration: underline;
+	}
+	#middleimg {
+		border: 0.25em solid black;
+		border-radius: 0.3em;
+	}
+a {
+	text-decoration: none;
+	color: initial;
+}
+h1 {
+	text-align: center;
+}
+	h1 span {
+		font-size: 2em;
+		font-variant: small-caps;
+	}
+table {
+	margin: 0 auto;
+}
+footer {
+	text-align: center;
+}
+	footer a:hover {
+		color: #7A0000;
+	}
+input {
+	background-color: #79593a;
+	border: 0.1em solid black;
+	text-align: center;
+	font-weight: bold;
+	font-size: .8em;
+}
+	#inner input {
+		background-color: white;
+		text-align: left;
+		font-size: 1.2em;
+		overflow: hidden;
+	}
+td {
+	border: 3px solid black;
+	border-radius: 5px;
+	padding: 0em 0.4em;
+	text-align: left;
+}
+	td img {
+		height: 2.5em;
+		padding-top: .5em;
+		display: inline-block;
+		float: left;
+	}
+	td div {
+		display: inline-block;
+	}
+.button  {
+	width: 8em;
+	height: 1.5em;
+	background-color: #cccccc;
+	border: 0.13em solid black;
+	border-radius: 0.3em;
+	margin: auto;
+	padding-top: 0.40em;
+	font-variant: small-caps;
+	font-size: 1.75em;
+}
+	.button:hover {
+		background-color: #ccbbaa;
+	}
+.centerimage {
+	text-align: center;
+	margin: 0em;
+	padding: 0em;
+}
+.center {
+	margin:0 auto;
+	width: 8em;
+	padding: 0;
+}
+.clear {
+	clear: both;
+}
+#middleimg {
+	width: 70%;
+}
+#header {
+	text-align: left;
+	background-color: #554433;
+	padding-top: 0.1em;
+	padding-left: 0.5em;
+	height: 3.5em;
+    margin: 0em 2.3% 0em 2.3%;
+	overflow: hidden;
+	border: 0.25em solid black;
+	border-top: 0em;
+	width: 95%;
+	z-index: 1;
+	position: fixed;
+	
+}
+	#header img {
+		height: 2.5em;
+		padding-top: .5em;
+		display: inline-block;
+		float: left;
+	}
+	.diceres {
+		float: left;
+		font-size: 1.5em;
+		height: 1em;
+		padding: 0.5em;
+	}
+	#header .nav{
+		display:inline-block;
+		float:right;
+		height:2em;
+		font-size: 1.5em;
+		text-align:center;
+		padding: 0.5em;
+		
+	}
+	#header .nav:hover {
+		padding-top: 0.4em;
+	}
+#center {
+	padding: 1em;
+	padding-top: 0em;
+	margin:0 auto;
+	margin-bottom: 1em;
+	width: 57em;
+	background-color: #aaaa99;
+}
+	#inner {
+		text-align: center;
+		margin-top: 0;
+		padding: 1em;
+		padding-left: 6em;
+		padding-right: 6em;
+		background-color: #aaaa99;
+		border: 1em solid #555522;
+		border-top: none;
+	}
+.linkblock {
+	font-size: 1.2em;
+	text-align: left;
+}
+	.linkblock a:hover {
+		color: #7A0000;
+	}
+	.linkblock img {
+		float: left;
+		margin-right: 1.25em;
+		border: 0.25em solid black;
+		border-radius: 0.28em;
+		width: 18.75em;
+		height: 12.5em;
+		display: inline;
+	}
+	.linkblock img:hover {
+		border: 0.25em solid #7A0000;
+	}
+.dice{
+	float: left;
+	font-size: 1.5em;
+	height: 1em;
+	padding: 0.5em;
+	padding-right: 0em;
+	clear: left;
+}
+#fightResult {
+	font-size: 1.5em;
+}
+	#fightResult td {
+		text-align: center;
+		border: 0.1em solid black;
+		padding: 0.28em;
+		min-width: 3em;
+	}
+.diceHead {
+	width: 2.5em;
+	display: inline-block;
+	float: left;
+}
+.vals {
+	font-size: 1.5em;
+}
+.diceline {
+	display: inline-block;
+	padding: 0.3em 0em;
+}
+.inlinetable {
+	display: inline-block;
+}
+	.inlinetable td {
+		width: 7.5em;
+		border-radius: 0px;
+		margin: 0px;
+		font-size: 1.2em;
+	}
+td.center {
+	text-align: center;
+	width: 2em;
+}
+#displayinput {
+	font-size: 20px;
+}
+.printnames {
+	margin: 0.5em;
+	font-size: 1.3em;
+	height: 1.8em;
+	padding: none;
+	border: 1px solid black;
+	border-radius: 0px;
+}
+.fightoutputinput {
+	width: 1.6em;
+}
+#fightsort {
+	display: none;
+}
+#playerhp {
+	width: 2em;
+}
+#playerinit {
+	width: 2em;
+	margin-right: 0.095em;
+}
+.dung {
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	height: 256px;
+}
+.dung>img {
+	width: 256px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+#dungeon {
+	margin: 10px auto 0;
+}
+.dunginput {
+width: 40px;
+}
+#centerdung {
+	padding: 1em;
+	padding-top: 0em;
+	margin:0 auto;
+	margin-bottom: 1em;
+	width: 95%;
+	background-color: #aaaa99;
+}
+	#innerdung {
+			text-align: center;
+			margin-top: 0;
+			padding: 1em;
+			padding-left: 6em;
+			padding-right: 6em;
+			background-color: #aaaa99;
+			border: 1em solid #555522;
+			border-top: none;
+			min-height: 40em;
+		}
+		#innerdung input {
+			background-color: white;
+			text-align: left;
+			font-size: 1.2em;
+			overflow: hidden;
+		}
+.disabled {
+	display: inline-block;
+	color: gray;
+}
+.region {
+	border: 2px solid black;
+	padding: 0.3em;
+	width: 33em;
+	margin: 0 auto;
+	font-size: 1.2em;
+}
+#altinput {
+	margin:0 auto;
+	padding:0;
+}
+.altinput {
+	display: inline;
+	width: 4em;
+}
+.centeredtable td {
+		width: 9em;
+		border-radius: 0px;
+		margin: 0px;
+		font-size: 1.3em;
+	}
+.citydistoutput {
+	width: 3em;
+}
